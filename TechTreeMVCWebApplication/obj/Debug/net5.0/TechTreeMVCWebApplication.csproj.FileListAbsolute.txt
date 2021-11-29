@@ -82,3 +82,4 @@ E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\D
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\ref\TechTreeMVCWebApplication.dll
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\TechTreeMVCWebApplication.pdb
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\TechTreeMVCWebApplication.genruntimeconfig.cache
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\TechTreeMVCWebApplication.csproj.AssemblyReference.cache
