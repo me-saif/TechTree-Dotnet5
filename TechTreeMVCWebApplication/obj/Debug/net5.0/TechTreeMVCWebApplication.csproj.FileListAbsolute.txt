@@ -166,3 +166,8 @@ E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\D
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Details.cshtml.g.cs
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Create.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Delete.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Details.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Edit.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\CategoryItem\Index.cshtml.g.cs
