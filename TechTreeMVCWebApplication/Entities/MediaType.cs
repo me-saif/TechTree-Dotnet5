@@ -16,6 +16,8 @@ namespace TechTreeMVCWebApplication.Entities
         [StringLength(100, MinimumLength = 3)]
         public string Title { get; set; }
 
+        [Required]
+        [Display(Name ="Thumbnail Image Path")]
         public string ThumbnailImagePath { get; set; }
 
         [ForeignKey("MediaTypeId")]
