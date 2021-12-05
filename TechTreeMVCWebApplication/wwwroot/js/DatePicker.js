@@ -1,7 +1,5 @@
 ﻿$(function () {
-
     function WireUpDatePicker() {
-
         const addMonths = 2;
         var currDate = new Date();
 

@@ -6,12 +6,11 @@ namespace TechTreeMVCWebApplication.Data.Migrations
 {
     public partial class AddAdminAccount : Migration
     {
-        const string ADMIN_USER_GUID = "1887252f-424c-4a05-a987-8ff0d6ab52b1";
-        const string ADMIN_ROLE_GUID = "47753eea-ea40-44b0-9c67-ed6d1e7d99fc";
+        private const string ADMIN_USER_GUID = "1887252f-424c-4a05-a987-8ff0d6ab52b1";
+        private const string ADMIN_ROLE_GUID = "47753eea-ea40-44b0-9c67-ed6d1e7d99fc";
 
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
             var hasher = new PasswordHasher<ApplicationUser>();
             var passwordHash = hasher.HashPassword(null, "Admin@123");
 
@@ -52,7 +51,7 @@ namespace TechTreeMVCWebApplication.Data.Migrations
 
             migrationBuilder.Sql($"DELETE FROM AspNetUsers WHERE Id = '{ADMIN_USER_GUID}'");
 
-            migrationBuilder.Sql($"DELETE FROM AspNetRoles WHERE Id = '{ADMIN_ROLE_GUID}'");    
+            migrationBuilder.Sql($"DELETE FROM AspNetRoles WHERE Id = '{ADMIN_ROLE_GUID}'");
         }
     }
 }

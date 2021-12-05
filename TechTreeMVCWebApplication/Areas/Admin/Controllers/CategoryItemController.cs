@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using TechTreeMVCWebApplication.Data;
 using TechTreeMVCWebApplication.Entities;
 using TechTreeMVCWebApplication.Extensions;
@@ -14,7 +12,6 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-
     public class CategoryItemController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -72,7 +69,8 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
         {
             List<MediaType> mediaTypes = await _context.MediaTypes.ToListAsync();
 
-            CategoryItem categoryItem = new CategoryItem { 
+            CategoryItem categoryItem = new CategoryItem
+            {
                 CategoryId = categoryId,
                 MediaTypes = mediaTypes.ConvertToSelectList(0)
             };
@@ -91,7 +89,7 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
             {
                 _context.Add(categoryItem);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index), new { categoryId = categoryItem.CategoryId});
+                return RedirectToAction(nameof(Index), new { categoryId = categoryItem.CategoryId });
             }
 
             List<MediaType> mediaTypes = await _context.MediaTypes.ToListAsync();

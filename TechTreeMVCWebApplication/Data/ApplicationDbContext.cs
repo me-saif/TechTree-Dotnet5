@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 using TechTreeMVCWebApplication.Entities;
 
 namespace TechTreeMVCWebApplication.Data
@@ -35,6 +33,7 @@ namespace TechTreeMVCWebApplication.Data
         [ForeignKey("UserId")]
         public virtual ICollection<UserCategory> UserCategory { get; set; }
     }
+
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

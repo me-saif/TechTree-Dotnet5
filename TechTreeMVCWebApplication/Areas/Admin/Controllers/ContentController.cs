@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using TechTreeMVCWebApplication.Data;
 using TechTreeMVCWebApplication.Entities;
 
@@ -13,7 +10,6 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize(Roles = "Admin")]
-
     public class ContentController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -50,7 +46,8 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
         // GET: Admin/Content/Create
         public IActionResult Create(int categoryItemId, int categoryId)
         {
-            Content content = new Content { 
+            Content content = new Content
+            {
                 CategoryId = categoryId,
                 CatItemId = categoryItemId
             };
@@ -70,7 +67,7 @@ namespace TechTreeMVCWebApplication.Areas.Admin.Controllers
                 _context.Add(content);
                 await _context.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index), "CategoryItem", new { categoryId = content.CategoryId});
+                return RedirectToAction(nameof(Index), "CategoryItem", new { categoryId = content.CategoryId });
             }
             return View(content);
         }

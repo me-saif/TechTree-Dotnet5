@@ -1,5 +1,3 @@
-using System;
-
 namespace TechTreeMVCWebApplication.Models
 {
     public class ErrorViewModel

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 using TechTreeMVCWebApplication.Interfaces;
 
 namespace TechTreeMVCWebApplication.Entities
 {
-    public class MediaType: IPrimaryProperties
+    public class MediaType : IPrimaryProperties
     {
         public int Id { get; set; }
 
@@ -17,7 +14,7 @@ namespace TechTreeMVCWebApplication.Entities
         public string Title { get; set; }
 
         [Required]
-        [Display(Name ="Thumbnail Image Path")]
+        [Display(Name = "Thumbnail Image Path")]
         public string ThumbnailImagePath { get; set; }
 
         [ForeignKey("MediaTypeId")]

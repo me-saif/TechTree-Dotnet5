@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace TechTreeMVCWebApplication.Entities
 {
@@ -16,6 +14,7 @@ namespace TechTreeMVCWebApplication.Entities
         [Required]
         [StringLength(100, MinimumLength = 3)]
         public string Title { get; set; }
+
         public string Description { get; set; }
         public int CategoryId { get; set; }
 
@@ -28,17 +27,19 @@ namespace TechTreeMVCWebApplication.Entities
 
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         [Display(Name = "Release Date")]
-        public DateTime DateTimeReleased {
-            get {
+        public DateTime DateTimeReleased
+        {
+            get
+            {
                 return (_releaseDate == DateTime.MinValue) ? DateTime.Now : _releaseDate;
             }
-            set {
+            set
+            {
                 _releaseDate = value;
-            } 
+            }
         }
 
         [NotMapped]
         public int ContentId { get; set; }
-
     }
 }
