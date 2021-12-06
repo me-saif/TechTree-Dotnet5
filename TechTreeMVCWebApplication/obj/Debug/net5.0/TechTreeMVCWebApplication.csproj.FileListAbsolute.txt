@@ -180,3 +180,4 @@ E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\D
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Areas\Admin\Views\MediaType\Index.cshtml.g.cs
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_DateScriptsPartial.cshtml.g.cs
 E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserLoginPartial.cshtml.g.cs
+E:\Projects\dotnetcore\TechTreeMVCWebApplication\TechTreeMVCWebApplication\obj\Debug\net5.0\Razor\Views\Shared\_UserRegistrationPartial.cshtml.g.cs
